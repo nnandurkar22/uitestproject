@@ -54,6 +54,12 @@ public class ShoppingPage extends BaseTest {
 		Assert.assertTrue(actualHeader.equals(expHeader), "Payment Success page header is not displayed correctly. Expected header is: "+expHeader+" and Actual header is: "+actualHeader);
 	}
 	
+	/**
+	 * This method adds the top cheapest products to the cart as per the product sub type mentioned via prodQtyMap.
+	 * @param prodName - Moisturizers or Sunscreens just for reporting purpose.
+	 * @param prodQtyMap - map of product sub type and number of those products to be added to the cart.
+	 * @return - Map<String,Long> - map of products added to the cart and their prices
+	 */
 	public Map<String,Long> addCheapestProductsToCart(String prodName, Map<String,Integer> prodQtyMap)
 	{
 		Map<String,Long> finalMap=new LinkedHashMap<String,Long>();
@@ -76,7 +82,7 @@ public class ShoppingPage extends BaseTest {
 			}
 			
 			prodToPriceMap=sortByValue(prodToPriceMap);
-			System.out.println(prodToPriceMap);
+			System.out.println("Sorted Products are: "+prodToPriceMap);
 			int i=0;
 			
 			for(Entry<String,Long> e:prodToPriceMap.entrySet())
@@ -97,7 +103,7 @@ public class ShoppingPage extends BaseTest {
 		{
 			e.printStackTrace();
 		}
-			
+			System.out.println("Final products added to cart are: "+finalMap);
 			return finalMap;
 	}
 	

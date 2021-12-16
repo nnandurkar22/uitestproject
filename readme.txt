@@ -1,3 +1,22 @@
+Manual Test Case:
+
+1. Open url http://weathershopper.pythonanywhere.com/
+2. Click on Buy Moisturizers.
+3. Add two moisturizers to the cart. First, select the least expensive moisturizer that contains Aloe. For your second moisturizer, select the least expensive moisturizer that contains almond.
+4. Verify that products are added to cart and click on Cart button.
+5. Verify that the shopping cart looks correct. Products are correctly added, their prices are correct and the total price is correct.
+6. Click on Pay with Card button.
+7. Fill all the details and click on Pay button.
+8. Verify that Payment is successful and correct success message is displayed on the Confirmation page.
+9. Verify above steps for Sunscreens page as well.
+
+Note: The above scenarios are automated in the TestClass.java file. Only difference is that the navigation to Moisturizers or Sunscreens page is done based on temperature value as mentioned in the guidelines.
+
+
+
+
+
+
 This project is developed with the help of following technology stack:
 1. Java (Version 16) - Programming Language
 2. Selenium (Version 4.0.0) - Web UI Automation Library

@@ -1,4 +1,0 @@
-# Created at 2021-12-16T20:24:41.012
-Boot Manifest-JAR contains absolute paths in classpath 'D:\Java Projects\FlinkTestWorkspace\uitestproject\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

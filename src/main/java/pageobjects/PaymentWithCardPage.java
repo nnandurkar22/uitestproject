@@ -61,14 +61,9 @@ public class PaymentWithCardPage extends BaseTest {
 			Assert.fail("Exception occurred while making payment with card");
 			}
 			catch(Exception e1)
-			{
-				
-			}
+			{}
 		}
 		
 		}
-	
-	
-	
 	
 }

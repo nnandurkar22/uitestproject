@@ -29,8 +29,6 @@ public class CheckoutPage extends BaseTest {
 	public static final By byTotalPrice=By.id("total");
 	public static final By byPayButton=By.xpath("//button[span[contains(text(),'Pay with Card')]]");
 	
-	
-	
 
 	public void verifyPageHeader(String expHeader)
 	{
@@ -39,9 +37,7 @@ public class CheckoutPage extends BaseTest {
 		Assert.assertTrue(actualHeader.equals(expHeader), "Payment Success page header is not displayed correctly. Expected header is: "+expHeader+" and Actual header is: "+actualHeader);
 		}
 		catch(Exception e)
-		{
-			
-		}
+		{}
 		}
 	
 	public void verifyCartGridValuesAndTotal(Map<String,Long> map)
@@ -100,9 +96,11 @@ public class CheckoutPage extends BaseTest {
 			actualHeaders.add(e.getText());
 		}
 		
-		
+		try {
 		Assert.assertTrue(actualHeaders.containsAll(expHeaders),"Cart Grid Headers are not displayed correctly");
-		
+		}
+		catch(Exception e)
+		{}
 	}
 	
 	public String getCellValue(int row, int col)
