@@ -60,3 +60,9 @@ e.g.
 mvn clean test -DtextNGSuiteFileName=src/test/java/testsuites/testng.xml -Dparallel=classes -DthreadCount=2
 
 4. The above command will run all the tests present in the specified suite xml file.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The Extent Reports based html report will be available in 'index.html' file under reports folder for the current run. The report automatically captures screenshot for failed step.
