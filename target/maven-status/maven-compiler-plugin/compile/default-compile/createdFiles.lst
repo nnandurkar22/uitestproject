@@ -1,0 +1,10 @@
+pageobjects\ShoppingPage.class
+pageobjects\PaymentConfirmationPage.class
+resources\BaseTest.class
+resources\WaitUtils.class
+resources\DataUtils.class
+resources\TestListeners.class
+pageobjects\CheckoutPage.class
+pageobjects\LandingPage.class
+FlinkTestAutomation\App.class
+pageobjects\PaymentWithCardPage.class
