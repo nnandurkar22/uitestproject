@@ -24,6 +24,8 @@ This project is developed with the help of following technology stack:
 4. Extent Reports - Reporting Framework
 5. TestNG (Version 7.4.0) - Basis TDD framework which also helps in facilitating parallel execution
 
+Although currently only Web UI automation is implemented, this framework is highly scalable and can also occupy other types of automated tests like Web Service, Mobile Testing, etc.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Prerequisites installations before running test:
